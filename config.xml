@@ -17,6 +17,6 @@
         GDPafk
     </author>
 	
-<gap:plugin name="cordova-plugin-whitelist" source="npm"/>
+<plugin name="com.simonmacdonald.telephonenumber" spec="1.0.0" source="pgb" />
 	
 </widget>
