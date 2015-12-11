@@ -17,6 +17,6 @@
         GDPafk
     </author>
 	
-<plugin name="cordova-plugin-device" spec="1.0.1" source="pgb" />
+<gap:plugin name="cordova-plugin-whitelist" source="npm"/>
 	
 </widget>
