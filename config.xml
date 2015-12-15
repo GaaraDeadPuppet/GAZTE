@@ -17,6 +17,6 @@
         GDPafk
     </author>
 	
-<plugin name="com.simonmacdonald.telephonenumber" spec="1.0.0" source="pgb" />
+<allow-navigation href="*" />
 	
 </widget>
