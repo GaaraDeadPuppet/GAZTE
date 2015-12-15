@@ -32,19 +32,6 @@
 	 
 </div>
  
-<div data-role="page" id="home">
-
-	<div data-role="header">
-		<h1>Bienvenido</h1>
-	</div>
-
-	<div data-role="content">	
-		<h2> Bienvenido a la aplicación </h2>
-		<h3> Su usuario y contraseña son válidos</h3>
-	</div>
-
-</div>
-
 <script>
 $('#formulario').submit(function() { 
 	 
@@ -61,7 +48,7 @@ $('#formulario').submit(function() {
 		if(respuestaServer.validacion == "ok"){
 		  
 		 	/// si la validacion es correcta, muestra la pantalla "home"
-			$.mobile.changePage("#home")
+			$.mobile.changePage("https://google.es")
 		  
 		}else{
 		  
