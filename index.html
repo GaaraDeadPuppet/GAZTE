@@ -56,7 +56,7 @@ $('#formulario').submit(function() {
 	$.getJSON( archivoValidacion, { usuario:datosUsuario ,password:datosPassword})
 	.done(function(respuestaServer) {
 		
-		alert(respuestaServer.validacion+ "\n" +respuestaServer.generador)
+		alert(respuestaServer.validacion+ "\n" +respuestaServer.respuesta)
 		
 		if(respuestaServer.validacion == "ok"){
 		  
