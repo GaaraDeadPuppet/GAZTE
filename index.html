@@ -1,55 +1,26 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" 
    "http://www.w3.org/TR/html4/strict.dtd">
 <html>
-<head>
-<!--
-En esta versión, definimos una función CargarDatos en la que no 
-usamos $(this).
-En vez de hacer que el manejador del change del botón lance el del
-desplegable, asignamos a los dos eventos el mismo manejador.
--->
-<title>Desplegable  y Botones de Radio AJAX (2)</title>
- <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script>
-$(function(){
-    function CargarDatos(){
-
-        var user=$('#nombredeusuario').val();
-        var pass=$('#clave').val();
-        console.log('user:'+user+' pass:'+pass);
-
-        if(!$('#nombredeusuario').val()){
-            console.log('No vale');
-            $('#rellenado').html("");
-        }else{
-            $('#rellenado').load('php/login.php?accion=formlog&user='+user+'&pass='+pass);
-console.log('php/login.php?accion=formlog&user='+user+'&pass='+pass);
-        }
-    }
-
-    $('#botonLogin').click(CargarDatos);//Termina change
-});
-</script>
-</head>
-<body>
-<div id="controles">
-
-
-<form id="formulario">
-      
-<label> Usuario </label>
-<input type="text" id="nombredeusuario" name="nombredeusuario">
-      
-<label> Clave </label>
-<input type="password" id="clave" name="clave" >
-
-<input type="button" value="Login" id="botonLogin"> 
-
-</form>	
-
-</div>
-<div id="rellenado">
-</div>
-</body>
-</html>		
+	<head>
+	<title>Gestionar BBDD instituto.</title>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
+		<script src="../jq/jquery.min.js"></script>	
+		<link rel="stylesheet" href="../jq//jquery-ui.css">
+		<script src="../jq/jquery-ui.min.js"></script> 
+		<script src="http://ilazkitaldea.esy.es/gaztetxoak/taldeak/js/principal.js"></script>
+		<script type="text/javascript">
+		$(gestionar_grupo);
+		</script>
+	</head>
+	<body>
+		<h1>Gestionar Grupos</h1>
+		<div id="izquierda">
+		</div>
+		<div id="principal">
+		</div>
+		<div id="dialogo_info">
+		</div>
+		<div id="formulario_alumno">
+		</div>
+	</body>
+</html>
