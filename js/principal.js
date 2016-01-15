@@ -3,7 +3,7 @@ function gestionar_grupo(){
 }
  
 function cargar_menu_grupos(){
-	$('#izquierda').load('php/cargar_menu_grupos.php');
+	$('#izquierda').load('http://ilazkitaldea.esy.es/gaztetxoak/taldeak/php/cargar_menu_grupos.php');
 }
  
 function menuCargado(){
